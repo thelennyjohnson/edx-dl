@@ -119,7 +119,7 @@ def change_openedx_site(site_name):
 
     BASE_URL = OPENEDX_SITES[site_name]['url']
     EDX_HOMEPAGE = BASE_URL + '/user_api/v1/account/login_session'
-    LOGIN_API = BASE_URL + '/login_ajax'
+    LOGIN_API = 'https://authn.edx.org/login'
     DASHBOARD = BASE_URL + '/dashboard'
     COURSEWARE_SEL = OPENEDX_SITES[site_name]['courseware-selector']
 
